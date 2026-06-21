@@ -71,22 +71,6 @@ These tools are intended for use by security professionals in controlled environ
 - Red team operators in authorized engagements
 - Security researchers in controlled lab environments
 
-## Documentation
-
-Each tool directory contains a `Readme.md` with:
-- Detailed vulnerability explanation
-- Prerequisites and requirements
-- Configuration guidance
-- Usage examples and output
-
-## Development Roadmap
-
-Future additions planned:
-- SQL injection enumeration tools
-- Active Directory / LDAP enumeration
-- Post-exploitation utilities
-- C2 communication frameworks
-
 ## Usage Guidelines
 
 All tools require:
@@ -102,4 +86,4 @@ For educational and authorized security testing use only
 
 ---
 
-Remember: With great power comes great responsibility. Use these tools ethically and legally.
+Remember: Use these tools ethically and legally.
