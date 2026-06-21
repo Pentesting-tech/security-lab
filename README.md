@@ -2,7 +2,7 @@
 
 A collection of penetration testing and security research tools developed during CWEE and CPTS certification preparation. Each tool demonstrates offensive security techniques and attack methodologies for authorized security testing, research, and educational purposes.
 
-## 📋 Tools & Scripts
+## Tools & Scripts
 
 ### Web Application Attacks
 
@@ -17,7 +17,7 @@ A collection of penetration testing and security research tools developed during
   - Command-line interface with flexible configuration
 - **Usage:** See `web-apps/NoSQL/Readme.md` for detailed documentation
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -40,14 +40,14 @@ python web-apps/NoSQL/NoSQL-SSJI-time-based-blind.py -H target.com:3000 -u admin
 python web-apps/NoSQL/NoSQL-SSJI-time-based-blind.py -h
 ```
 
-## 📚 Prerequisites
+## Prerequisites
 
 - Python 3.7+
 - `requests` library (see requirements.txt)
 - Authorized access to target systems
 - Understanding of attack techniques being employed
 
-## ⚠️ Legal & Ethical Notice
+## Legal & Ethical Notice
 
 **DISCLAIMER:** This repository is provided for educational and authorized security testing purposes only.
 
@@ -59,14 +59,14 @@ By using these tools, you acknowledge that:
 
 **The author holds no liability for misuse of these tools.**
 
-## 🎯 Target Audience
+## Target Audience
 
 - Security professionals conducting authorized penetration tests
 - Students preparing for CWEE, CPTS, and similar certifications
 - Red team operators in authorized engagements
 - Security researchers in controlled lab environments
 
-## 📖 Documentation
+## Documentation
 
 Each tool directory contains a `Readme.md` with:
 - Detailed vulnerability explanation
@@ -74,7 +74,7 @@ Each tool directory contains a `Readme.md` with:
 - Configuration guidance
 - Usage examples and output
 
-## 🔄 Development Roadmap
+## Development Roadmap
 
 Future additions planned:
 - SQL injection enumeration tools
@@ -82,7 +82,7 @@ Future additions planned:
 - Post-exploitation utilities
 - C2 communication frameworks
 
-## 🤝 Usage Guidelines
+## Usage Guidelines
 
 All tools require:
 1. Explicit written authorization from system owner
@@ -90,11 +90,11 @@ All tools require:
 3. Understanding of potential impact
 4. Proper documentation and reporting
 
-## 📝 License & Author
+## License & Author
 
 Created by: Pentesting-tech  
 For educational and authorized security testing use only
 
 ---
 
-**Remember:** With great power comes great responsibility. Use these tools ethically and legally.
+Remember: With great power comes great responsibility. Use these tools ethically and legally.
