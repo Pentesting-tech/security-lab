@@ -47,17 +47,22 @@ python web-apps/NoSQL/NoSQL-SSJI-time-based-blind.py -h
 - Authorized access to target systems
 - Understanding of attack techniques being employed
 
-## Legal & Ethical Notice
+## Usage & License
 
 **DISCLAIMER:** This repository is provided for educational and authorized security testing purposes only.
 
 By using these tools, you acknowledge that:
 - You have explicit written permission to test target systems
 - You understand the legal implications of unauthorized computer system access
+- You will only use these tools for legitimate penetration testing, security research, or CTF competitions
 - You accept full responsibility for your actions
-- Unauthorized access to computer systems is illegal in most jurisdictions
 
-**The author holds no liability for misuse of these tools.**
+**The author holds no liability for:**
+- Unauthorized access or damage caused by misuse of these tools
+- Legal consequences resulting from improper use
+- Any harm caused by using these scripts on systems without proper authorization
+
+These tools are intended for use by security professionals in controlled environments with proper authorization. Unauthorized access to computer systems is illegal in most jurisdictions.
 
 ## Target Audience
 
