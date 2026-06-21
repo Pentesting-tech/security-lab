@@ -6,7 +6,7 @@ Demonstrates time-based blind NoSQL injection using binary search for efficient
 data extraction. Useful for pentesting NoSQL databases (MongoDB, etc.) when direct
 error-based feedback is unavailable.
 
-Author: Security Lab
+Author: PentestingTech
 """
 
 import requests
